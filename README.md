@@ -11,19 +11,19 @@ Provide a small set of well-typed namespace modules (`fs`, `path`, `process`, `h
 ## Install
 
 ```ts
-import { config, fs, http, path, process, system } from "@tskit/core";
+import { config, fs, http, path, process, system } from "jsr:@vtooling/tskit";
 ```
 
 Or pull a single module:
 
 ```ts
-import { fs } from "@tskit/core/fs";
+import { fs } from "@vtooling/tskit/fs";
 ```
 
 ## Quick example
 
 ```ts
-import { fs, http, process } from "@tskit/core";
+import { fs, http, process, system } from "@vtooling/tskit";
 
 const files = await fs.list(".");
 
@@ -32,6 +32,8 @@ console.log(r.stdout);
 
 const res = await http.get("https://example.com");
 console.log(res.status);
+
+console.log(system.info());
 ```
 
 ## Permissions
@@ -54,7 +56,7 @@ mod.ts          unified entrypoint
 fs/             readText, writeText, list
 path/           join, basename, dirname, extname, normalize, relative
 process/        exec, spawn
-http/           get, post
+http/           get, post, put, delete
 config/         load (json/yaml/toml)
 system/         info
 ```

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Commands for this repository (Deno 2.9+, no Node/npm).
+Commands for this repository (Deno 2.9+).
 
 ## Type check
 

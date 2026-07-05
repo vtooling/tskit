@@ -1,7 +1,6 @@
 {
   "name": "@vtooling/tskit",
-  "version": "0.1.0",
-  "license": "MIT",
+  "version": "0.1.1",
   "exports": {
     ".": "./mod.ts",
     "./fs": "./fs/mod.ts",
