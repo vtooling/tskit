@@ -1,0 +1,12 @@
+# Coverage output
+cov_profile/
+
+# Deno
+.deno/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
